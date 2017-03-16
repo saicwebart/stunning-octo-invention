@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- 
+	Exercise: 
+		1. Using an element selector, center all the text on the page.
+		2. Using IDs, change the background colors of the headers to form a 
+		   gradient. (Leave the h1 that has the text "Gradient" alone.) You can 
+		   use a color gradient generator to help: 
+		   http://www.perbang.dk/rgbgradient/
+		3. Using a class, style the h1 elements that are part of the gradient.
+		   Make the text white, increase its font size and increate its 
+		   line-height.
+
+	Extra: if you want to remove the whitespace between the h1 elements, try 
+	using "margin: 0px"
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>Gradient</title>
+	<style>
+		h1 {
+			text-align: center;
+		}
+		#step-1 {
+			background-color: rgb(255, 0, 125);
+		}
+		#step-2 {
+			background-color: rgb(225, 0, 150);
+		}
+		#step-3 {
+			background-color: rgb(200, 0, 175);
+		}
+		#step-4 {
+			background-color: rgb(175, 0, 200);
+		}
+		#step-5 {
+			background-color: rgb(150, 0, 225);
+		}
+		#step-6 {
+			background-color: rgb(125, 0, 255);
+		}
+		.step {
+			color: white;
+			margin: 0;
+			line-height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Gradient</h1>
+	<h1 id="step-1" class="step">Step 1</h1>
+	<h1 id="step-2" class="step">Step 2</h1>
+	<h1 id="step-3" class="step">Step 3</h1>
+	<h1 id="step-4" class="step">Step 4</h1>
+	<h1 id="step-5" class="step">Step 5</h1>
+	<h1 id="step-6" class="step">Step 6</h1>
+</body>
+</html>

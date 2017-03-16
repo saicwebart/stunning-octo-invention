@@ -1,0 +1,46 @@
+<!-- 
+	Exercise: 
+		1. Add an h1 and change it's color and background color using rgba
+		2. Add an h2 and change it's color and background color using hsla
+		3. Add an h3 and change it's color and background color using keywords
+		4. Add another h1 - what happens to it?
+		4. Can you think of a way to change the whole page's background color?
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color!</title>
+	<style>
+		h1 {
+			color: white;
+			background-color: darkviolet;
+		}
+		h2 {
+			color: rgba(255, 0, 0, 1);
+			background-color: rgba(0, 0, 255, 1);
+		}
+		h3 {
+			/* http://hslpicker.com */
+			color: hsla(176, 100%, 45%, 1);
+			background-color: hsla(213, 69%, 36%, 1);
+		}
+		body {
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Glorious Color!</h1>
+	<h2>Another color</h2>
+	<h3>Yet another color!</h3>
+
+	<h1>This is the same style.</h1>
+	<h1>This is also the same style.</h1>
+
+	<h1 style="color: mediumslateblue; background-color:black;">
+		But, I'm different.
+	</h1>
+</body>
+</html>
